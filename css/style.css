@@ -1,9 +1,21 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+:root{
+  --azul: #011d69cb;
+  --violeta:#920162cb;
+  --violetasuave:#eb38e257;
+}
+
+.text-violet{
+  color:var(--violeta);
+}
+
+.super-color{
+  background: linear-gradient(
+    var(--azul),
+    var(--violeta)
+  );
+  color: white;
+}
+
 
 /*======================================
 //--//-->   STYLES GENERALES
@@ -29,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: var(--violeta);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -39,7 +51,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .color-d {
@@ -82,10 +94,30 @@ a:hover {
   overflow: hidden;
 }
 
-.bg-image {
+.bg-purple-gradient{
   background-image: linear-gradient(90deg,
-    rgba(1, 29, 105, 0.795), 
-    rgba(146, 1, 98, 0.795)
+    var(--azul),
+    var(--violeta)
+  )
+}
+
+.bg-form{
+  background-image: linear-gradient(
+    90deg,
+    var(--azul),
+    var(--violeta)
+  ),
+  url('../img/overlay-bg.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.bg-image {
+  background-image: linear-gradient(
+    90deg,
+    var(--azul),
+    var(--violeta)
   ),
   url('../img/fondo.webp');
   background-repeat: no-repeat;
@@ -93,9 +125,6 @@ a:hover {
   background-position: center center;
 }
 
-.overlay-mf {
-  background-color: #0078ff;
-}
 
 .overlay-mf {
   position: absolute;
@@ -164,7 +193,11 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background: linear-gradient(
+    90deg, 
+    var(--violeta),
+    var(--azul)
+  );
   margin: 0 auto;
 }
 
@@ -183,7 +216,11 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background: linear-gradient(
+      90deg, 
+      var(--violeta),
+      var(--azul)
+    );
   width: 100px;
   bottom: -12px;
 }
@@ -220,14 +257,14 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px var(--violeta);
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: var(--violeta);
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  box-shadow: 0 0 0 3px var(--violetasuave);
   transition: all 500ms ease;
 }
 
@@ -250,7 +287,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: var(--violeta);
   margin-right: 10px;
 }
 
@@ -264,7 +301,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px var(--violeta);
   display: block;
 }
 
@@ -311,7 +348,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: var(--violeta);
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -330,7 +367,11 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: linear-gradient(
+    90deg, 
+    var(--azul),
+    var(--violeta)
+  );
   color: #fff;
   width: 44px;
   height: 44px;
@@ -347,6 +388,56 @@ a:hover {
 .back-to-top i {
   padding-top: 12px;
   color: #fff;
+}
+
+.back-to-back {
+  position: fixed;
+  background: linear-gradient(
+    90deg, 
+    var(--azul),
+    var(--violeta)
+  );
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-back i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  background: linear-gradient(
+      90deg, 
+      var(--azul),
+      var(--violeta)
+    );
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+  left: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.btn-whatsapp i {
+  color: #fff;
+  padding-top: 12px;
+
 }
 
 /* Prelaoder */
@@ -368,7 +459,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid var(--violeta);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -443,7 +534,7 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #1B1B1B;
+  color: white;
 }
 
 .navbar-b.navbar-trans .nav-link:hover:before,
@@ -479,36 +570,40 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background:linear-gradient(
+    90deg,
+    var(--azul),
+    var(--violeta)
+  );
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: white;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: white;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: white;
 }
 
 .navbar-b .navbar-brand {
@@ -536,13 +631,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: white;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color: white;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -656,7 +751,7 @@ a:hover {
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -701,7 +796,11 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #0078ff;
+  background: linear-gradient(
+    90deg, 
+    var(--violeta),
+    var(--azul)
+  );
 }
 
 /*======================================
@@ -718,8 +817,11 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  background: linear-gradient(
+    90deg, 
+    var(--violeta),
+    var(--azul)
+  );  box-shadow: 0 0 0 10px var(--violetasuave);
 }
 
 .service-box .service-ico {
@@ -730,6 +832,7 @@ a:hover {
 .service-box .ico-circle {
   transition: all 500ms ease;
   font-size: 4rem;
+  
 }
 
 .service-box .s-title {
@@ -803,17 +906,17 @@ a:hover {
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: var(--violeta);
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .work-content .w-like .num-like {
@@ -824,47 +927,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-/*======================================
-//--//-->   TESTIMONIALS
-======================================*/
-
-.testimonials .owl-carousel .owl-item img {
-  width: auto;
-}
-
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
-}
 
 /*======================================
 //--//-->   BLOG
@@ -889,8 +951,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
-  border-radius: 4px;
+  border-radius: 4px;  
 }
 
 .card-blog .card-category .category {
@@ -943,7 +1004,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid var(--violeta);
   margin-top: 1rem;
 }
 
@@ -953,7 +1014,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul a {
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .blog-wrapper .post-meta ul span {
@@ -961,7 +1022,7 @@ a:hover {
 }
 
 .blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid var(--violeta);
   padding: 18px;
   font-style: italic;
 }
@@ -993,7 +1054,7 @@ a:hover {
 }
 
 .box-comments .list-comments a {
-  color: #0078ff;
+  color: var(--violeta);
 }
 
 .box-comments .list-comments span {
@@ -1010,7 +1071,7 @@ a:hover {
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
-  border-left: 5px solid #0078ff;
+  border-left: 5px solid var(--violeta);
   padding-left: 15px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1027,7 +1088,7 @@ a:hover {
   width: 10px;
   height: 1px;
   left: 0;
-  background-color: #0078ff;
+  background-color: var(--violeta);
   top: 20px;
 }
 
@@ -1038,8 +1099,8 @@ a:hover {
 }
 
 .sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
+  background-color: var(--violeta);
+  border-color: var(--violeta);
   border-radius: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1047,7 +1108,7 @@ a:hover {
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: #0078ff;
+  background-color: var(--violeta);
   padding: .2rem .6rem;
   margin-bottom: .5rem;
   border-radius: 15px;
@@ -1096,8 +1157,8 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
+  color: var(--violeta);
+  border: 1px solid var(--violeta);
   display: none;
   text-align: center;
   padding: 15px;
@@ -1147,6 +1208,11 @@ footer .credits a {
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
+  background:linear-gradient(
+    90deg,
+    var(--violeta),
+    var(--azul)
+  );
 }
 
 .button:focus {
@@ -1154,16 +1220,10 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #0062d3;
-  color: #fff;
+  background-color: #1B1B1B;
   transition: all 500ms ease;
 }
 
-.button-a {
-  background-color: #0078ff;
-  color: #fff;
-  border-color: #cde1f8;
-}
 
 .button-big {
   padding: .9rem 2.3rem;
@@ -1272,4 +1332,8 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+}
+
+.h-text-white:hover{
+  color:white;
 }
