@@ -1,6 +1,7 @@
 :root{
   --azul: #011d69cb;
   --violeta:#920162cb;
+  --violetamedia:#9203637a;
   --violetasuave:#eb38e257;
 }
 
@@ -26,7 +27,7 @@ body {
   color: #4e4e4e;
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -611,6 +612,7 @@ a:hover {
   font-size: 1.6rem;
   font-weight: 600;
 }
+
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
 .navbar-b .dropdown.show .dropdown-menu,
@@ -1337,3 +1339,9 @@ footer .credits a {
 .h-text-white:hover{
   color:white;
 }
+
+.form-control:focus {
+	border-color: var(--violetasuave);
+	box-shadow: 0 0 0 .2rem var(--violetamedia);
+}
+

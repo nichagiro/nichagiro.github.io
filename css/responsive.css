@@ -1,0 +1,69 @@
+/* PHONES */ 
+@media only screen and (min-width:320px) and (max-width:639px){
+    /* FOTO MIA */
+    .img-pequeña{  
+        height: 220px;
+    }
+    /* HABILIDADES DERECHAS */
+    .pull-right{
+        display: none;
+    }
+    /* MIS DATOS PERSONALES */
+    .about-info{
+        text-align: center;
+    }
+}
+
+/* PHONE SM */
+@media only screen and (min-width:320px) and (max-width:374px){
+    /* TEXTO PORTAFOLIO */
+    .title-a {
+        font-size: 40px;
+    }
+    /* TEXTO PONTE EN CONTACTO */
+    .title-c{
+        font-size: 1.8rem;
+    }
+}
+
+/* PHONE SM AND MD */
+@media only screen and (min-width:320px) and (max-width:413px){
+    .title-f{
+        font-size: 2.3rem;
+    }
+}
+
+/* TABLETS MD*/
+@media only screen and (min-width:768px) and (max-width:991px){
+    .pull-right{
+        display: none;
+    }
+    .img-pequeña{
+        height: 280px;
+    }
+    .about-me{
+        margin-top: 2rem;
+    }
+}
+
+/* TABLETS LG*/
+@media only screen and (min-width:992px) and (max-width:1023px){
+    .pull-f{
+        display: none;
+    }
+}
+
+
+/* ALL PHONES + TABLETS SM*/
+@media only screen and (min-width:320px) and (max-width:767px){
+    .mt-sm{
+        margin-top: 2rem;
+    }
+}
+
+/* ALL PHONES + TABLETS SM AND MD */
+@media only screen and (min-width:320px) and (max-width:991px){
+    .skill-mf{
+        margin-top: 2rem;
+    }
+}
