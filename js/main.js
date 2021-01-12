@@ -1,3 +1,9 @@
+// Esconder el sobre del menu principal en tablets media
+if(screen.width > 767 & screen.width < 992 ){
+	const sobre_mi = document.getElementById('sobre-mi');
+	sobre_mi.style.display='none';
+};
+
 (function ($) {
 	"use strict";
 	var nav = $('nav');
@@ -101,17 +107,5 @@
 		});
 	}
 
-	/*--/ Testimonials owl /--*/
-	// $('#testimonial-mf').owlCarousel({
-	// 	margin: 20,
-	// 	autoplay: true,
-	// 	autoplayTimeout: 4000,
-	// 	autoplayHoverPause: true,
-	// 	responsive: {
-	// 		0: {
-	// 			items: 1,
-	// 		}
-	// 	}
-	// });
 
 })(jQuery);
