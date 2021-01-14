@@ -8,7 +8,7 @@ form.addEventListener('submit',function(e){
   e.preventDefault();
 
   let data = new FormData(form);
-  ajax(form.method, form.action, data);
+  ajax('POST', 'https://formspree.io/f/mbjpqeqq', data);
 
 })
 
@@ -24,7 +24,6 @@ function ajax(method, url, data) {
       ok.className+=' d-block';
       error.className+=' d-none';
       form.className = 'd-none';
-
     } else {
       error.className+='d-block';
     }
