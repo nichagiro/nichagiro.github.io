@@ -9,6 +9,10 @@
   color:var(--violeta);
 }
 
+.bg-violeta{
+  background: var(--violeta);
+}
+
 .super-color{
   background: linear-gradient(
     var(--azul),

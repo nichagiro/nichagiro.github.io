@@ -588,32 +588,28 @@
                     </h5>
                   </div>
                   <div>
-                      <form action="" method="post" role="form" class="contactForm">
-                      <div id="sendmessage">Me comunicare contigo lo mas pronto posible.</div> 
-                      <div id="errormessage">Lo siento, no se pudo enviar el correo.</div>
+                    <div id="dangerMSG" class="alert-danger mb-2 py-2 px-2 d-none">Lo siento, no se pudo enviar el correo.</div>
+                    <div id="successMSG" class="alert-success bg-violeta text-white font-weight-bold mb-3 py-2 px-2 d-none">Me comunicare contigo lo mas pronto posible.</div> 
+                    <form id="formy" class="contactForm">
                       <div class="row">
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" data-rule="minlen:7" data-msg="Ingresa minimo 7 letras" />
-                            <div class="validation"></div>
+                            <input required minlength="4" type="text" name="name" class="form-control" id="name" placeholder="Nombre:"/>
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Correo:" data-rule="email" data-msg="Valida que sea un correo" />
-                            <div class="validation"></div>
+                            <input required type="email" class="form-control" name="email" id="email" placeholder="Correo:"/>
                           </div>
                         </div>
                         <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:" data-rule="minlen:5" data-msg="Ingresa minimo 5 letras" />
-                              <div class="validation"></div>
+                              <input required minlength="4" type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:"/>
                             </div>
                         </div>
                         <div class="col-md-12 mb-3">
                           <div class="form-group">
-                            <textarea style="resize: none;" class="form-control" name="message" rows="5" data-rule="required" data-msg="Ingresa el mensaje" placeholder="Mensaje:"></textarea>
-                            <div class="validation"></div>
+                            <textarea required style="resize: none;" class="form-control" name="message" placeholder="Mensaje:"></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
@@ -692,7 +688,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script defer src="contactform/contactform.js"></script>
+  <script defer src="js/contactform.js"></script>
 
 </body>
 </html>
