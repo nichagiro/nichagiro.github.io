@@ -8,22 +8,27 @@ form.addEventListener('submit',function(e){
   var ok = document.getElementById('successMSG');
   var error = document.getElementById('dangerMSG');
 
-  fetch('php/contactform.php',{
-    method:'POST',
-    body:datos
+  fetch('https://wa.me/+573174865702',{
+    body:datos,
+    method:'POST'
   })
-  .then(res => res.json())
-  .then(data => {
-    
-    if(data == "OK"){
-      ok.className+=' d-block';
-      error.className+=' d-none';
-      form.className = 'd-none';
-    }
-    else{
-      error.className+='d-block';
-    }
 
-  })
+  // fetch('php/contactform.php',{
+  //   method:'POST',
+  //   body:datos
+  // })
+  // .then(res => res.json())
+  // .then(data => {
+    
+  //   if(data == "OK"){
+  //     ok.className+=' d-block';
+  //     error.className+=' d-none';
+  //     form.className = 'd-none';
+  //   }
+  //   else{
+  //     error.className+='d-block';
+  //   }
+
+  // })
 
 })
