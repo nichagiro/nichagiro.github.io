@@ -1,34 +1,33 @@
 var form = document.getElementById('formy');
+var ok = document.getElementById('successMSG');
+var error = document.getElementById('dangerMSG');
+
 
 form.addEventListener('submit',function(e){
 
   e.preventDefault();
 
-  let datos = new FormData(form);
-  var ok = document.getElementById('successMSG');
-  var error = document.getElementById('dangerMSG');
-
-  fetch('https://wa.me/+573174865702',{
-    body:datos,
-    method:'POST'
-  })
-
-  // fetch('php/contactform.php',{
-  //   method:'POST',
-  //   body:datos
-  // })
-  // .then(res => res.json())
-  // .then(data => {
-    
-  //   if(data == "OK"){
-  //     ok.className+=' d-block';
-  //     error.className+=' d-none';
-  //     form.className = 'd-none';
-  //   }
-  //   else{
-  //     error.className+='d-block';
-  //   }
-
-  // })
+  let data = new FormData(form);
+  ajax(form.method, form.action, data);
 
 })
+
+
+
+function ajax(method, url, data) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      ok.className+=' d-block';
+      error.className+=' d-none';
+      form.className = 'd-none';
+
+    } else {
+      error.className+='d-block';
+    }
+  };
+  xhr.send(data);
+}
