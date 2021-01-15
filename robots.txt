@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://nichagiro.github.io/sitemap.xml

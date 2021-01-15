@@ -21,6 +21,14 @@
   color: white;
 }
 
+.a-link{
+  color: white;
+  font-weight: bold;
+}
+
+.a-link:hover{
+  color: var(--violetasuave);
+}
 
 /*======================================
 //--//-->   STYLES GENERALES
