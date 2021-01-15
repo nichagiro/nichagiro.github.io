@@ -45,10 +45,10 @@ if(screen.width > 767 & screen.width < 992 ){
 	});
 
 	/*--/ Star Counter /--*/
-	$('.counter').counterUp({
-		delay: 15,
-		time: 2000
-	});
+	// $('.counter').counterUp({
+	// 	delay: 15,
+	// 	time: 2000
+	// });
 
 	/*--/ Star Scrolling nav /--*/
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
@@ -69,12 +69,6 @@ if(screen.width > 767 & screen.width < 992 ){
 		$('.navbar-collapse').collapse('hide');
 	});
 
-	// Activate scrollspy to add active class to navbar items on scroll
-	$('body').scrollspy({
-		target: '#mainNav',
-		offset: navHeight
-	});
-	/*--/ End Scrolling nav /--*/
 
 	/*--/ Navbar Menu Reduce /--*/
 	$(window).trigger('scroll');
