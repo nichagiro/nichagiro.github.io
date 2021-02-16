@@ -2,7 +2,6 @@ var form = document.getElementById('formy');
 var ok = document.getElementById('successMSG');
 var error = document.getElementById('dangerMSG');
 
-
 form.addEventListener('submit',function(e){
 
   e.preventDefault();
@@ -11,8 +10,6 @@ form.addEventListener('submit',function(e){
   ajax('POST', 'https://formspree.io/f/mbjpqeqq', data);
 
 })
-
-
 
 function ajax(method, url, data) {
   var xhr = new XMLHttpRequest();

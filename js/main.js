@@ -1,9 +1,3 @@
-// Esconder el sobre del menu principal en tablets media
-if(screen.width > 767 & screen.width < 992 ){
-	const sobre_mi = document.getElementById('sobre-mi');
-	sobre_mi.style.display='none';
-};
-
 (function ($) {
 	"use strict";
 	var nav = $('nav');
@@ -100,6 +94,5 @@ if(screen.width > 767 & screen.width < 992 ){
 			backSpeed: 30
 		});
 	}
-
 
 })(jQuery);
