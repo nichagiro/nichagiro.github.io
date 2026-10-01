@@ -1,1 +1,122 @@
-@media only screen and (min-width:320px) and (max-width:639px){.img-pequeña{height:220px}.pull-right{display:none}.about-info{text-align:center}}@media only screen and (min-width:320px) and (max-width:374px){.title-a{font-size:40px}.title-c{font-size:1.8rem}}@media only screen and (min-width:320px) and (max-width:413px){.title-f{font-size:2.3rem}}@media only screen and (min-width:768px) and (max-width:991px){.pull-right{display:none}.img-pequeña{height:280px}.about-me{margin-top:2rem}}@media only screen and (min-width:992px) and (max-width:1023px){.pull-f{display:none}}@media only screen and (min-width:768px){.flexionar-float{flex-direction:row}}@media only screen and (min-width:320px) and (max-width:767px){.mt-sm{margin-top:2rem}}@media only screen and (min-width:320px) and (max-width:991px){.skill-mf{margin-top:2rem}}
+/* TABLETS AND BELOW: about stacks */
+@media (max-width:991.98px){
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:2.5rem;
+  }
+
+  .about-media{
+    max-width:420px;
+  }
+
+  .process-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:2.25rem;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+    gap:2.5rem;
+  }
+
+  .footer-brand{
+    grid-column:1 / -1;
+  }
+}
+
+/* PHONES AND SMALL TABLETS */
+@media (max-width:767.98px){
+  .section{
+    padding:4.5rem 0;
+  }
+
+  .section-head{
+    margin-bottom:2.5rem;
+  }
+
+  .hero{
+    padding:7rem 0 5rem;
+  }
+
+  .hero-actions{
+    width:100%;
+  }
+
+  .hero-actions .btn-prim,
+  .hero-actions .btn-ghost{
+    width:100%;
+  }
+
+  .service-row{
+    grid-template-columns:auto 1fr;
+    gap:.6rem 1.25rem;
+    padding:1.6rem .5rem;
+    align-items:start;
+  }
+
+  .service-row:hover{
+    padding-left:.9rem;
+  }
+
+  .service-ico{
+    font-size:1.6rem;
+    padding-top:.2rem;
+  }
+
+  .service-name{
+    font-size:1.3rem;
+    align-self:center;
+  }
+
+  .service-desc{
+    grid-column:1 / -1;
+    padding-left:calc(1.6rem + 1.25rem);
+    font-size:.97rem;
+  }
+
+  .tech-item{
+    font-size:.92rem;
+    padding:0 1.75rem;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    gap:2.25rem;
+  }
+
+  .back-to-top,
+  .btn-whatsapp{
+    width:44px;
+    height:44px;
+  }
+
+  .back-to-top i,
+  .btn-whatsapp i{
+    font-size:23px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width:575.98px){
+  .process-grid{
+    grid-template-columns:1fr;
+    gap:1.75rem;
+  }
+
+  .about-media{
+    max-width:100%;
+  }
+
+  .spec{
+    grid-template-columns:1fr;
+    gap:.15rem;
+  }
+
+  .spec dd{
+    margin-bottom:.65rem;
+  }
+
+  .spec dt{
+    font-size:.85rem;
+  }
+}

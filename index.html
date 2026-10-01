@@ -25,7 +25,7 @@
   <!-- Open Graph  -->
   <meta property="og:title" content="Nicolas Chamorro Giron | Diseñador y desarrollador de paginas web"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://nichagiro.github.io/">
+  <meta property="og:url" content="https://nichagiro.github.io/"/>
   <meta property="og:site_name" content="Nicolas Chamorro Giron"/>
   <meta property="og:image" content="https://nichagiro.github.io/img/NicolasChamorro.webp"/>
   <meta property="og:image:alt" content="nicolas chamorro giron"/>    
@@ -64,6 +64,11 @@
   <!-- Favicon -->
   <link href="img/NicolasChamorro.webp" rel="icon">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -78,11 +83,11 @@
 
 <body id="page-top">
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <!-- <a class="navbar-brand js-scroll" href="#page-top">Nicolás Chamorro</a> -->
+      <a class="navbar-brand js-scroll" href="#home">Nicolás Chamorro</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Abrir menú de navegación">
         <span></span>
         <span></span>
         <span></span>
@@ -93,13 +98,13 @@
             <a class="nav-link js-scroll" href="#home">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">Sobre mi</a>
+            <a class="nav-link js-scroll" href="#about">Sobre mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Habilidades</a> 
+            <a class="nav-link js-scroll" href="#service">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contacto</a>
+            <a class="nav-link js-scroll" href="#proceso">Proceso</a>
           </li>
         </ul>
       </div>
@@ -107,316 +112,251 @@
   </nav>
   <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="intro-title mb-4">Nicolas Chamorro</h1> 
-          <p class="intro-subtitle"><span class="text-slider-items">Diseño de paginas web, Mantenimiento de computadores, Imagenes Publicitarias, Creación de Logos, Capacitar en diseño web</span><strong class="text-slider"></strong></p>
-          <p class="pt-3"><a class="btn super-color js-scroll px-4 h-text-white" href="#about" role="button">Conoceme</a></p>
-        </div>
+  <!--/ Hero Star /-->
+  <header id="home" class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+    <div class="container">
+      <h1 class="hero-title">Nicolás<br>Chamorro</h1>
+      <p class="hero-sub"><span class="text-slider-items">Diseño de páginas web, Mantenimiento de computadores, Imágenes publicitarias, Creación de logos, Capacitaciones de diseño web</span><strong class="text-slider"></strong></p>
+      <div class="hero-actions">
+        <a class="btn-prim js-scroll" href="#about">Conóceme</a>
+        <a class="btn-ghost" href="https://wa.me/+573174865702" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
       </div>
     </div>
-  </div>
-  <!--/ Intro Skew End /-->
+  </header>
+  <!--/ Hero End /-->
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <!--/ Section About Star /-->
+  <section id="about" class="section about">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-12 col-lg-6">
-                <div class="row">
-                  <div class="col-sm-6 col-md-6 col-lg-5">
-                    <div class="about-img d-flex justify-content-center">
-                      <img loading="lazy" src="img/NicolasChamorro.webp" class="img-fluid rounded b-shadow-a img-pequeña" alt="Nicolas Chamorro Giron">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Nombre: </span> <span>Nicolas Chamorro</span></p>
-                      <p><span class="title-s">Perfil: </span> <span>Desarrollador Web</span></p>
-                      <p><span class="title-s">Email: </span> <span>nichagiro@gmail.com</span></p>
-                      <p><span class="title-s">Celular: </span> <span>+57 317 486 5702</span></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="skill-mf">
-                  <p class="title-s ">Habilidades</p>
-                  <span>HTML - CSS - JS </span> <span c lass="pull-right">TAILWIND, BOOTSTRAP, VUE</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>PHP, SQL, GIT </span> <span class="pull-right">LARAVEL, MySQL, GITHUB </span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>MANTENIMIENTO DE COMPUTO</span> <span class="pull-right pull-f">HARDWARE, SOFTWARE</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CONTENIDO, LOGOS</span> <span class="pull-right">INSKAPE, CANVA</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <span>CAPACITACIONES</span> <span class="pull-right">DISEÑO WEB</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 col-lg-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h2 class="title-left">
-                      Mi perfil
-                    </h2>
-                  </div>
-                  <p class="lead">
-                    Tecnólogo en análisis y desarrollo de sistemas de información, Profesional en soporte TI. estoy 
-                    capacitado para crear páginas web o sistemas de información en base a unos requerimientos ya 
-                    estipulados, así como en la recolección de estos y el manejo de base de datos relacionales MySQL,
-                    desarrollo de etiquetas HTML acompañado de código CSS y sus frameworks (Bootstrap y Tailwind) y 
-                    lenguaje JAVASCRIPT (Vue). Manejo de control de versiones (GIT) y gran conocimiento con el SEO. 
-                    Manejo de lógica dentro del back PHP y su respectivo framework LARAVEL con LIVEWIRE. 
-                  </p>
-                  <p class="lead">
-                    Soporte de usuarios, software y hardware, Mantenimiento de equipos e instalación de 
-                    sistemas operativos y programas. 
-                  </p>
-                </div>
-              </div>
+      <div class="section-head">
+        <h2 class="section-title">Sobre mí</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-media">
+          <figure class="photo-frame">
+            <img loading="lazy" src="img/NicolasChamorro.webp" alt="Retrato de Nicolás Chamorro">
+          </figure>
+          <dl class="spec">
+            <dt>Perfil</dt>
+            <dd>Desarrollador web</dd>
+            <dt>Formación</dt>
+            <dd>Tecnólogo en análisis y desarrollo de sistemas de información</dd>
+            <dt>Ubicación</dt>
+            <dd>Salomía, Valle del Cauca</dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:nichagiro@gmail.com">nichagiro@gmail.com</a></dd>
+            <dt>Celular</dt>
+            <dd><a href="https://wa.me/573174865702" target="_blank" rel="noopener">+57 317 486 5702</a></dd>
+          </dl>
+        </div>
+        <div class="about-body">
+          <p class="lead">
+            Construyo páginas web y sistemas de información a partir de tus requerimientos, desde la
+            recolección de datos hasta la base de datos. Domino HTML, CSS y JavaScript con Vue,
+            frameworks como Bootstrap y Tailwind, y control de versiones con Git. También manejo
+            SEO para que tu sitio se posicione.
+          </p>
+          <p class="lead">
+            En el back-end trabajo con PHP, Laravel y Livewire sobre MySQL. Además doy soporte de
+            usuarios, software y hardware: mantenimiento de equipos e instalación de sistemas
+            operativos y programas.
+          </p>
+          <div class="stack">
+            <div class="stack-group">
+              <h3 class="stack-label">Frontend</h3>
+              <ul class="chips">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Vue</li>
+                <li>Tailwind</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-label">Backend y datos</h3>
+              <ul class="chips">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Livewire</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-label">Herramientas y otros</h3>
+              <ul class="chips">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>SEO</li>
+                <li>Mantenimiento de equipos</li>
+                <li>Inkscape</li>
+                <li>Canva</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--/ Section About End /-->
 
   <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
+  <section id="service" class="section services">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h2 class="title-a">
-              Habilidades
-            </h2>
-            <p class="subtitle-a">
-              A continuación veras mis habilidades en las que me encuentro capacitado para trabajar. 
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
+      <div class="section-head">
+        <h2 class="section-title">Servicios</h2>
+        <p class="section-sub">Esto es en lo que puedo ayudarte.</p>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-monitor"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Diseño Web</h3>
-              <p class="s-description text-center">
-                Páginas web interactivas y dinámicas; bonitos diseños en base a plantillas y/o vistas personalizadas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Desarrollo Web</h3>
-              <p class="s-description text-center">
-                Paginas web rápidas y eficaces, Excelente funcionalidad, Administrables y buen puntaje SEO. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Diseño Adaptable</h3>
-              <p class="s-description text-center">
-                Visualice su página web desde cualquier dispositivo (Móvil, Tablet, Ordenadores), 
-                no pierde la calidad del diseño. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-laptop"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Mantenimiento</h3>
-              <p class="s-description text-center">
-                Formateo de sistemas operativos (Windows, Chrome OS, Línux), Optimización del sistema. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Diseño Grafico</h3>
-              <p class="s-description text-center">
-                creo tu logo empresarial y gestiono contenido en redes como imágenes y videos. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-university"></i></span>
-            </div>
-            <div class="service-content">
-              <h3 class="s-title">Capacitaciones</h3>
-              <p class="s-description text-center">
-                ¿Te gustaria aprender a crear tu propia página web desde cero? déjame enseñarte. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ul class="service-list">
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-monitor"></i></span>
+          <h3 class="service-name">Diseño web</h3>
+          <p class="service-desc">Interfaces atractivas y dinámicas, con plantillas o diseños personalizados según lo que necesites.</p>
+        </li>
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-code-working"></i></span>
+          <h3 class="service-name">Desarrollo web</h3>
+          <p class="service-desc">Sitios rápidos, funcionales y administrables, con buen posicionamiento SEO.</p>
+        </li>
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-android-phone-portrait"></i></span>
+          <h3 class="service-name">Diseño adaptable</h3>
+          <p class="service-desc">Tu página se ve bien en móvil, tablet y escritorio, sin perder calidad.</p>
+        </li>
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-laptop"></i></span>
+          <h3 class="service-name">Mantenimiento</h3>
+          <p class="service-desc">Formateo e instalación de sistemas operativos (Windows, Linux, Chrome OS) y optimización del equipo.</p>
+        </li>
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-paintbrush"></i></span>
+          <h3 class="service-name">Diseño gráfico</h3>
+          <p class="service-desc">Creo tu logo y gestiono contenido para redes: imágenes y videos.</p>
+        </li>
+        <li class="service-row">
+          <span class="service-ico" aria-hidden="true"><i class="ion-university"></i></span>
+          <h3 class="service-name">Capacitaciones</h3>
+          <p class="service-desc">¿Quieres aprender a crear tu propia página web desde cero? Te acompaño paso a paso.</p>
+        </li>
+      </ul>
     </div>
   </section>
   <!--/ Section Services End /-->
-  
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax sect-mt4 route bg-form">
+
+  <!--/ Tech strip Star /-->
+  <div class="tech-strip" aria-label="Tecnologías con las que trabajo">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span class="tech-item">HTML</span>
+        <span class="tech-item">CSS</span>
+        <span class="tech-item">JavaScript</span>
+        <span class="tech-item">Vue</span>
+        <span class="tech-item">Tailwind</span>
+        <span class="tech-item">Bootstrap</span>
+        <span class="tech-item">PHP</span>
+        <span class="tech-item">Laravel</span>
+        <span class="tech-item">Livewire</span>
+        <span class="tech-item">MySQL</span>
+        <span class="tech-item">Git</span>
+        <span class="tech-item">SEO</span>
+        <span class="tech-item" aria-hidden="true">HTML</span>
+        <span class="tech-item" aria-hidden="true">CSS</span>
+        <span class="tech-item" aria-hidden="true">JavaScript</span>
+        <span class="tech-item" aria-hidden="true">Vue</span>
+        <span class="tech-item" aria-hidden="true">Tailwind</span>
+        <span class="tech-item" aria-hidden="true">Bootstrap</span>
+        <span class="tech-item" aria-hidden="true">PHP</span>
+        <span class="tech-item" aria-hidden="true">Laravel</span>
+        <span class="tech-item" aria-hidden="true">Livewire</span>
+        <span class="tech-item" aria-hidden="true">MySQL</span>
+        <span class="tech-item" aria-hidden="true">Git</span>
+        <span class="tech-item" aria-hidden="true">SEO</span>
+      </div>
+    </div>
+  </div>
+  <!--/ Tech strip End /-->
+
+  <!--/ Section Proceso Star /-->
+  <section id="proceso" class="section process">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Déjame un correo
-                    </h5>
-                  </div>
-                  <div>
-                    <div id="dangerMSG" class="alert-danger mb-2 py-2 px-2 d-none">Lo siento, no se pudo enviar el correo.</div>
-                    <div id="successMSG" class="alert-success bg-violeta text-white font-weight-bold mb-3 py-2 px-2 d-none">Me comunicare contigo lo mas pronto posible.</div> 
-                    <form id="formy" class="contactForm">
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input required minlength="4" type="text" name="name" class="form-control" id="name" placeholder="Nombre:"/>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input required type="email" class="form-control" name="email" id="email" placeholder="Correo:"/>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input required minlength="4" type="text" class="form-control" name="subject" id="subject" placeholder="Asunto:"/>
-                            </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea required style="resize: none;" class="form-control" name="message" placeholder="Mensaje:"></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button super-color button-big button-rouded">Enviar</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h6 class="title-left title-c">
-                      Ponte en contacto
-                    </h6>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      Si necesitas comunicarte conmigo, puedes hacerlo por cualquiera de estos canales de información,
-                      estare gustoso de atenderte.
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> Cra 4b calle 46 bis 06, Salomia</li>
-                      <li><span class="ion-ios-telephone"></span> (032) 371 6302 - (57) 318 401 5986</li>
-                      <li><span class="ion-email"></span> nichagiro@gmail.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <li><a target="_blank" href="https://www.facebook.com/nichagiro/"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-                      <li><a target="_blank" href="https://www.instagram.com/nicolaschamorrogiron/"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <li><a target="_blank" href="https://twitter.com/Nicolas63783814"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-                      <li><a target="_blank" href="https://www.linkedin.com/in/nicolas-chamorro-gir%C3%B3n-9aa594196/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="section-head">
+        <h2 class="section-title">Cómo trabajo</h2>
+        <p class="section-sub">Un proceso claro, de la idea a la entrega.</p>
+      </div>
+      <ol class="process-grid">
+        <li class="process-step">
+          <span class="step-num">01</span>
+          <h3>Descubrimiento</h3>
+          <p>Conversamos sobre tu idea, tus objetivos y lo que necesitas.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">02</span>
+          <h3>Diseño</h3>
+          <p>Defino la estructura, el estilo y la experiencia visual.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">03</span>
+          <h3>Desarrollo</h3>
+          <p>Construyo tu sitio con código limpio, adaptable y optimizado.</p>
+        </li>
+        <li class="process-step">
+          <span class="step-num">04</span>
+          <h3>Entrega</h3>
+          <p>Lo pongo en línea y te acompaño con soporte y mantenimiento.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <!--/ Section Proceso End /-->
+
+  <!--/ Footer Star /-->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-name">Nicolás Chamorro</p>
+          <p class="footer-tag">Desarrollo y diseño web, mantenimiento de equipos y capacitaciones.</p>
+          <div class="socials">
+            <ul>
+              <li><a target="_blank" rel="noopener" href="https://www.facebook.com/nichagiro/" aria-label="Facebook"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.instagram.com/nicolaschamorrogiron/" aria-label="Instagram"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+              <li><a target="_blank" rel="noopener" href="https://twitter.com/Nicolas63783814" aria-label="Twitter"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+              <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nicolas-chamorro-gir%C3%B3n-9aa594196/" aria-label="LinkedIn"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+            </ul>
           </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Navegación</h3>
+          <ul class="footer-links">
+            <li><a class="js-scroll" href="#home">Inicio</a></li>
+            <li><a class="js-scroll" href="#about">Sobre mí</a></li>
+            <li><a class="js-scroll" href="#service">Servicios</a></li>
+            <li><a class="js-scroll" href="#proceso">Proceso</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:nichagiro@gmail.com">nichagiro@gmail.com</a></li>
+            <li><a href="https://wa.me/573174865702" target="_blank" rel="noopener">+57 317 486 5702</a></li>
+            <li>Salomía, Valle del Cauca</li>
+          </ul>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">
-                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                  <img loading="lazy" alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
-                </a> <br/>
-                &copy; Copyright 
-                <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
-                  <a class="a-link" xmlns:cc="http://creativecommons.org/ns#" href="https://nichagiro.github.io" property="cc:attributionName" rel="cc:attributionURL">
-                    <span>Nicolás Chamorro</span>
-                  </a>
-                </span>
-              </p>
-              <div class="credits">
-                licencia de 
-                <a target="_blank" class="a-link" rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                  Creative Commons Reconocimiento 4.0 Internacional
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
+  </footer>
+  <!--/ Footer End /-->
 
   <!-- btn-FLOTANTE -->
-  <a href="#" class="back-to-top shadow-lg">
+  <a href="#" class="back-to-top" aria-label="Volver arriba">
     <i class="ion-android-arrow-dropup"></i>
   </a>
   <!-- WHATSAPP -->
-  <a href="https://wa.me/+573174865702" class="btn-whatsapp shadow-lg">
-    <i class="ion-social-whatsapp pt-3"></i>
+  <a href="https://wa.me/+573174865702" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <i class="ion-social-whatsapp"></i>
   </a>
   <!-- CARGA -->
   <div id="preloader"></div>
@@ -426,14 +366,9 @@
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script src="lib/easing/easing.min.js"></script> 
-  <script src="lib/counterup/jquery.counterup.min.js"></script>
   <script src="lib/typed/typed.min.js"></script> 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script defer src="js/contactform.js"></script>
 
 </body>
 </html>
-
-
